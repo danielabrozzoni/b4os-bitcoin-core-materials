@@ -58,3 +58,4 @@ Some guidance on structuring commits and PR descriptions is available in [`CONTR
 ### Hard
 
 - [`exercises/07-hard-compact-block-missing-tx-fallback.md`](./exercises/07-hard-compact-block-missing-tx-fallback.md): test compact-block reconstruction.
+- [`exercises/08-hard-cve-2018-17144-exploit.md`](./exercises/08-hard-cve-2018-17144-exploit.md): simulate and test CVE-2018-17144 duplicate-input behavior.
