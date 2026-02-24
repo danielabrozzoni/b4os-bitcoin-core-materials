@@ -168,8 +168,17 @@ def run_test(self):
 3. Add your new test filename to `BASE_SCRIPTS` in [`test/functional/test_runner.py`](https://github.com/danielabrozzoni/b4os-bitcoin/blob/master/test/functional/test_runner.py).
 4. Run the configure step of the project again. This is needed to make sure the functional test ends up in the `build/` directory:
 ```bash
-cmake -B build # or equivalent, if you want to compile with special flags etc
+cmake -B build  # or equivalent, if you need custom compile flags
 ```
+
+If this is your first time, you'll also need to build the project:
+```bash
+cmake --build build  # -j N (optional): N = number of parallel jobs
+```
+Make sure you go through the [SETUP.md](../../SETUP.md) — it has all the build instructions you'll need.
+
+For subsequent changes, re-running the configure step alone is sufficient to update the test code.
+
 5. Run the test with:
 
 ```bash
